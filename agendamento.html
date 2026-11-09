@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Agendamento | Kapilart Salão — João Pessoa</title>
+<meta name="description" content="Agende seu horário no Kapilart Salão em João Pessoa. Escolha o serviço, informe seu tipo de cabelo e cor e finalize pelo WhatsApp.">
+<meta name="theme-color" content="#FAF6F1">
+<meta property="og:title" content="Agende seu horário • Kapilart Salão">
+<meta property="og:description" content="Escolha o serviço e finalize o agendamento pelo WhatsApp.">
+<meta property="og:image" content="img/og.jpg">
+<link rel="icon" href="img/favicon.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h15M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.4"/></symbol>
+  <symbol id="i-left" viewBox="0 0 24 24"><path d="M20 12H5M11 6l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="1.4"/></symbol>
+  <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2Zm0 18.15a8.2 8.2 0 0 1-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.23 8.23 0 1 1 6.99 3.86Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.23.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.06-.1-.22-.16-.47-.28Z"/></symbol>
+</svg>
+
+<header class="header is-solid">
+  <div class="wrap">
+    <a href="index.html" class="brand" aria-label="Voltar ao início"><img src="img/logo-horizontal.png" alt="Kapilart Salão" width="868" height="273"></a>
+    <a href="index.html" class="link-arrow" style="border:0"><svg><use href="#i-left"/></svg> Voltar ao site</a>
+  </div>
+</header>
+
+<main class="booking">
+  <div class="wrap booking-grid">
+    <aside class="booking-aside">
+      <p class="eyebrow">Agendamento</p>
+      <h1 class="h-section" style="margin-bottom:22px">Sua próxima <em>transformação</em> começa aqui.</h1>
+      <p class="lead" style="margin-bottom:30px">Preencha os dados abaixo. Ao enviar, abriremos o WhatsApp do Kapilart com sua solicitação pronta — nossa equipe confirma o horário com você.</p>
+      <div class="media"><img src="img/hero-amanda.webp" alt="Amanda Luna no Kapilart Salão" style="object-position:center 25%"></div>
+      <div class="note">
+        <span><b>Horário:</b> segunda a sábado, das 09h às 18h</span>
+        <span><b>Endereço:</b> Rua Cel. Martinho da Mota Silveira, 110 — Jardim Oceania</span>
+      </div>
+    </aside>
+
+    <div class="form-card">
+      <p class="eyebrow">Solicitar horário</p>
+      <h2 class="h-section">Conte um pouco <em>sobre você.</em></h2>
+      <form id="bookingForm" novalidate>
+        <div class="form-grid">
+          <div class="field">
+            <label for="nome">Nome completo <i>*</i></label>
+            <input id="nome" name="nome" type="text" autocomplete="name" placeholder="Seu nome" required>
+            <span class="err">Informe seu nome.</span>
+          </div>
+          <div class="field">
+            <label for="contato">WhatsApp <i>*</i></label>
+            <input id="contato" name="contato" type="tel" inputmode="tel" autocomplete="tel" placeholder="(83) 90000-0000" required>
+            <span class="err">Informe um telefone válido com DDD.</span>
+          </div>
+
+          <div class="field full">
+            <label for="servico">Serviço desejado <i>*</i></label>
+            <select id="servico" name="servico" required>
+              <option value="" selected disabled>Selecione um serviço</option>
+              <optgroup label="Cor & loiros">
+                <option>Mechas e luzes</option>
+                <option>Coloração</option>
+                <option>Correção de cor</option>
+                <option>Selagem matizadora</option>
+              </optgroup>
+              <optgroup label="Tratamentos & alisamentos">
+                <option>Selagem</option>
+                <option>Realinhamento orgânico</option>
+                <option>Progressiva</option>
+                <option>Botox capilar</option>
+                <option>Hidratação</option>
+                <option>Reconstrução capilar</option>
+              </optgroup>
+              <optgroup label="Corte & finalização">
+                <option>Corte e design de corte</option>
+                <option>Escova</option>
+                <option>Penteados</option>
+                <option>Maquiagem</option>
+              </optgroup>
+              <option>Avaliação (ainda não sei)</option>
+            </select>
+            <span class="err">Escolha um serviço.</span>
+          </div>
+
+          <div class="field full" role="radiogroup" aria-labelledby="lbl-tipo">
+            <label id="lbl-tipo">Tipo de cabelo <i>*</i></label>
+            <div class="chips">
+              <label class="chip"><input type="radio" name="tipo" value="Liso"><span>Liso</span></label>
+              <label class="chip"><input type="radio" name="tipo" value="Ondulado"><span>Ondulado</span></label>
+              <label class="chip"><input type="radio" name="tipo" value="Cacheado"><span>Cacheado</span></label>
+              <label class="chip"><input type="radio" name="tipo" value="Crespo"><span>Crespo</span></label>
+              <label class="chip"><input type="radio" name="tipo" value="Não sei informar"><span>Não sei</span></label>
+            </div>
+            <span class="err">Selecione o tipo do seu cabelo.</span>
+          </div>
+
+          <div class="field">
+            <label for="cor">Cor atual do cabelo <i>*</i></label>
+            <select id="cor" name="cor" required>
+              <option value="" selected disabled>Selecione</option>
+              <option>Natural (sem química)</option>
+              <option>Loiro</option>
+              <option>Castanho</option>
+              <option>Preto</option>
+              <option>Ruivo / acobreado</option>
+              <option>Com mechas</option>
+              <option>Grisalho / branco</option>
+              <option>Colorido / fantasia</option>
+            </select>
+            <span class="err">Informe a cor atual.</span>
+          </div>
+          <div class="field">
+            <label for="comprimento">Comprimento</label>
+            <select id="comprimento" name="comprimento">
+              <option value="" selected>Selecione (opcional)</option>
+              <option>Curto</option>
+              <option>Médio (ombros)</option>
+              <option>Longo</option>
+              <option>Extra longo</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="dia">Dia preferido <i>*</i></label>
+            <input id="dia" name="dia" type="date" required>
+            <span class="err" id="diaErr">Escolha um dia de segunda a sábado.</span>
+          </div>
+          <div class="field">
+            <label for="periodo">Horário preferido</label>
+            <select id="periodo" name="periodo">
+              <option value="" selected>Qualquer horário</option>
+              <option>Manhã (09h às 12h)</option>
+              <option>Tarde (12h às 15h)</option>
+              <option>Fim da tarde (15h às 18h)</option>
+            </select>
+          </div>
+
+          <div class="field full">
+            <label for="obs">Observações</label>
+            <textarea id="obs" name="obs" placeholder="Conte o que deseja, histórico químico, referência de cor…"></textarea>
+          </div>
+
+          <div class="form-actions">
+            <button type="submit" class="btn"><svg><use href="#i-wa"/></svg> Finalizar no WhatsApp</button>
+            <small>Seu pedido é enviado pelo WhatsApp. O horário é confirmado pela nossa equipe.</small>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</main>
+
+<footer class="footer" style="padding-top:40px">
+  <div class="wrap footer-bottom" style="margin-top:0">
+    <span>© <span id="year">2026</span> Kapilart Salão • (83) 3245-7722 • kapilartsalao1@gmail.com</span>
+    <span>Desenvolvido por <a href="https://logotopdesign.com" target="_blank" rel="noopener">Logotop Design</a></span>
+  </div>
+</footer>
+
+<script src="js/booking.js" defer></script>
+</body>
+</html>
